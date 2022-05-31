@@ -17,7 +17,7 @@ public class ex9 {
 
         } else if (peso < 60) {
             System.out.println("Categoria A.");
-        } else if (peso > 60 || peso <= 90) {
+        } else if (peso > 60 && peso <= 90) {
             System.out.println("Categoria D.");
         } else if (peso > 90) {
             System.out.println("Categoria G.");

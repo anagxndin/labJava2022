@@ -23,6 +23,30 @@ public class exemploSwitch {
 
             default:
             System.out.println("Vencimento sem data, desculpe");
+
+            //OPERADOR TERNARIO
+            //atalho: sysout
+            System.out.print("Insira sua idade: ");
+            int idade = 10;
+            System.out.println("Digite um ano futuro: ");
+            int ano = entrada.nextInt();
+            
+            int aux = ano - 2022;
+            int idadeFutura = idade + aux;
+
+            System.out.println("Idade: " + idade);
+            System.out.println("Nova Idade: " + idadeFutura);
+            System.out.println("Minha idade em " + ano + "será" + idadeFutura);
+
+            //decrementando e incrementando
+            //int novaIdade = idade1++;//idade = idade + 1
+            //int novaIdade = --idade;
+                                                //if true  //if false
+            //String indicacao = (idade >= 18) ?  "adulto" : "criança/adolescente";
+            //System.out.println("Resultado: " + indicacao);
+
+
+
             
 
         }
