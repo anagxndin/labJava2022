@@ -56,33 +56,6 @@ public class Principal {
 
         //int valorAtaque = g.atacar(6);
 
-        Random dado = new Random();
-
-        int round  = 1;
-        while(g.getVida() > 0 && m.getVida() > 0){
-            System.out.println("Round: " + round);
-            System.out.println("Oponente 1: " + g.getNome());
-            System.out.println("Oponente 2: " + m.getNome());
-
-            //turno do mago (m)
-            int valorDado = dado.nextInt(6);
-            System.out.println("Valor do dado: " + valorDado);
-            int valorAtaque = m.atacar(valorDado);
-            g.defender(valorAtaque);
-
-            //turno do guerreiro (g)
-            valorDado = dado.nextInt(6);
-            System.out.println("Valor do dado: " + valorDado);
-            valorAtaque = g.atacar(valorDado);
-            m.defender(valorAtaque);
-            //round = round +1
-            round++;
-        }
-        if(m.getVida() <= 0){
-            System.out.println("Gerreiro " + g.getNome() + " foi campeão!!!" );
-        }else if(g.getVida() <= 0){
-            System.out.println("br.edu.iftm.rpgjava.classes.Mago " + m.getNome() + " foi campeão!!!");
-        }
-
+        
     }
 }
